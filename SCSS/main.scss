@@ -1,0 +1,1032 @@
+@import "_mixin";
+@import "_var";
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    // Navigation start 
+    .navbar{
+        padding-top: 19px;
+        background: $skyblue_bgcolor;
+        padding-left:135px;
+        .navbar-nav{
+           padding-left: 530px;
+           .nav-item{
+              .nav-link{
+                @include fontprops;
+                font-size: 16px;
+                padding-right: 15px;
+                color: $primary-color;
+              }
+            }
+        }
+    }
+    // Navigation End 
+
+    // Home Page Start 
+    .home_page{
+        padding-top: 119px;
+        background: $skyblue_bgcolor;
+        padding-left: 45px;
+        .header_1{
+            font-size: 64px;
+            font-weight: 700;
+            color: $primary-color;
+            line-height: 76.8px;
+            margin-bottom: 40px;
+        }
+        .para_1{
+            @include paraprops;
+            color: $primary-color;
+            margin-bottom: 60px;
+            font-weight: 500;
+        }
+        .form-control{
+            @include fontprops;
+            @include search;
+        }
+        .btn-dark{
+            @include button;
+        }
+        .card_holly{
+            @include cards;
+            margin-left: 300px;
+            margin-top: 100px;
+            z-index: 2;
+            position: absolute;
+            .card_holly_main{
+                @include fontprops;
+                @include cardmain;
+            }
+            .holly_stars{
+                width: 98.82px;
+                height: 16px;
+                margin-bottom: 20px;
+                margin-top: 15px;
+            }
+            .holly_img{
+                margin-top: 15px;
+            }
+            .card_holly_bold{
+                @include cardboldtext;
+            }
+            .card_holly_text{
+                @include fontprops;
+                @include cardtext;
+                margin-left: 40px;
+                margin-top: -15px;
+            }
+        }
+        .card_dicks{
+            position: absolute;
+            @include cards;
+            margin-top: -100px;
+            margin-left: -100px;
+            z-index: 2;
+            .card_dicks_main{
+                @include fontprops;
+                @include cardmain;
+            }
+            .dicks_stars{
+                @include size(98.82px,16px);
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            .dicks_img{
+                margin-top: 15px;
+            }
+            .card_dicks_bold{
+                @include cardboldtext;
+            }
+            .card_dicks_text{
+                @include fontprops;
+                @include cardtext;
+                margin-left: 40px;
+                margin-top: -15px;
+            }
+        }
+        .lawyer_img{
+            @include size(500px , 500px);
+            position: relative;
+            margin-top: -50px;
+            z-index: 1;
+        }
+        .ellipse_red{
+            position: absolute;
+        }
+        .ellipse_green{
+            padding-left: 350px;
+            z-index: 10;
+            margin-top: -160px;
+            margin-left: 7px;
+        }
+    }
+    // Home Page End 
+
+    // Features Section Start 
+    .features{
+        padding-top: 208px;
+        padding-bottom: 112px;
+        padding-left: 45px;
+        .feature_img{
+            padding-top: 25px;
+        }
+        .text_span{
+            @include paraprops;
+            color: $primary-color;
+            position: relative;
+        }
+        .text_bold1{
+            @include header;
+            @include textbold;
+            position: absolute;
+            margin-left: 62px;
+            margin-top: -30px;
+        }
+        .text_bold2{
+            @include header;
+            @include textbold;
+            position: absolute;
+            margin-left: 60px;
+            margin-top: -30px;
+        }
+        .text_bold3{
+            @include header;
+            @include textbold;
+            position: absolute;
+            margin-left: 44px;
+            margin-top: -30px;
+        }
+        .text_para{
+            @include paraprops;
+            color: $primary-color;
+            margin-top: 32px;
+        }
+        .para_bold{
+            @include paraprops;
+            color: $primary-color;
+            font-weight: 600;
+            text-decoration: none;
+            &:hover{
+                color: $para_color;
+                text-decoration: underline;
+            }
+        }
+    }
+    // Features Section End 
+
+    // Services Section Start 
+    .services{
+        padding-bottom: 150px;
+        padding-left: 45px;
+        .text_services{
+            @include header;
+            @include header_font;
+            margin-top: 100px;
+            margin-bottom: 40px;
+        }
+        .para_services{
+            @include paraprops;
+            font-weight: 400;
+            color: $para_color;
+        }
+    }
+    // Services Section End 
+
+    // Success Section Start 
+    .success{
+        background: $shadow_skycolor;
+        text-align: center;
+        height:741px;
+        .text_success{
+            @include header;
+            @include header_font;
+            padding-top: 120px;
+            padding-bottom: 100px;
+        }
+        .img_success{
+            @include size(892px , 496px);
+            position: relative;
+            margin-left: 130px;
+            z-index: 1;
+        }
+        .img_red{
+            @include size(186px , 185px);
+            position: absolute;
+            margin-left: 900px;
+            transform: rotate(90deg);
+            margin-top: 250px;
+        }
+        .img_green{
+            @include size(186px , 185px);
+            position: absolute;
+            margin-top: 555px;
+        }
+    }
+    // Success Section End 
+
+    // Review Section Start 
+    .review{
+        padding-left: 200px;
+        padding-bottom: 262px;
+        .text_review{
+            @include header;
+            @include header_font;
+            padding-top: 212px;
+            margin-bottom: 91px;
+        }
+        .quatation{
+            @include quata;
+            margin-left: 110px;
+            margin-bottom: 130px;
+        }
+        .quatation3{
+            visibility: hidden;
+        }
+        .review_red{
+            @include size(173px , 172px);
+            transform:rotateX(180deg);
+        }
+        .review_info{
+            padding-left: 100px;
+            .review_para{
+               @include fontprops;
+               @include fontitalic;
+               padding-top: 25px;
+            }
+            .stars{
+                margin-bottom: 34px;
+            }
+            .avatar1{
+                margin-top: 15px;
+            }
+            .review_bold{
+                @include reviewpara;
+                padding-left: 18px;
+            }
+            .review_text{
+                @include paraprops;
+                font-weight: 500;
+                color: $para_color;
+                padding-left: 100px;
+                margin-top: -30px;
+            }
+        }
+        .review2_info{
+            padding-left: 100px;
+            padding-top:114px;
+            .review2_para{
+                @include fontprops;
+                @include fontitalic;
+                padding-top: 25px;
+            }
+            .stars2{
+                margin-bottom: 34px;
+            }
+            .avatar2{
+                margin-top: 15px;
+            }
+            .review2_bold{
+                @include reviewpara;
+                padding-left: 18px;
+            }
+            .review2_text{
+                @include paraprops;
+                font-weight: 500;
+                color: $para_color;
+                padding-left: 100px;
+                margin-top: -30px;
+            } 
+        }
+        .quatation2{
+            @include quata;
+            transform: rotate(170deg);
+            margin-top: 60px;
+        }
+        .review_green{
+            transform: rotate(90deg);
+            padding-left: 300px;
+            margin-top: -20px;
+            margin-bottom: 30px;
+        }
+    }
+    // Review Section End 
+
+    // Subscribe Section Start 
+    .icon_v{
+        @include size(147px,165px);
+        position: absolute;
+        margin-left: 200px;
+        margin-top: -60px;
+        z-index: 1;
+    }
+    .icon_leaf{
+        @include size(147px,165px);
+        margin-left: 1202px;
+        margin-top: -60px;
+        position: absolute;
+        z-index: 1;
+    }
+    .icon_m{
+        @include size(147px,165px);
+        margin-top: -90px;
+        position: absolute;
+    }
+    .icon_slack{
+        @include size(147px,165px);
+        margin-top: -90px;
+        margin-left: 1010px;
+        position: absolute;
+    }
+    .subscribe{
+        background: $shadow_pinkcolor;
+        text-align: center;
+        padding-bottom: 200px;
+        position: relative;
+        .subscribe_text{
+            @include header_font;
+            @include header;
+            padding-top: 167px;
+            margin-bottom: 40px;
+        }
+        .subscribe_para{
+            @include paraprops;
+            font-weight: 400;
+            color: $para_color;
+            margin-bottom: 47px;
+        }
+        .input-group{
+            margin-left: 300px;
+            .form-control{
+                @include fontprops;
+                @include search;
+            }
+            .btn-dark{
+                @include button;
+            }
+        }
+    }
+    // Subscribe Section End 
+
+    // Footer Section Start 
+    .footer{
+        padding-top:133px;
+        .footer_red{
+            @include size(173px , 172px);
+            transform:rotateX(180deg);
+            margin-top: -535px;
+            margin-left: 108px;
+        }
+        .logo_text{
+            .ofspace_logo{
+              margin-bottom: 34px;
+            }
+            .footer_text{
+              @include fontprops;
+              font-size: 16px;
+              line-height: 24px;
+              margin-bottom: 23px;
+              color: $para_color;
+            }
+            .social_icons{
+              margin-left: -5px;
+              a{
+                text-decoration: none;
+                .instagram{
+                  @include size(30px , 30px);
+                  @include socialicons;
+                  padding-left: 8px;
+                  padding-top: 7px;
+                }
+                .facebook{
+                  @include size(30px , 30px);
+                  @include socialicons;
+                  padding-left: 10px;
+                  padding-top: 7px;
+                }
+                .twitter{
+                  @include size(30px , 30px);
+                  @include socialicons;
+                  padding-left: 7px;
+                  padding-top: 7px;
+                }
+                }
+            }
+        }
+        .first_col{
+            margin-left: -40px;
+            .main_text{
+                a{
+                    @include header;
+                    @include footertext;
+                    margin-bottom: 20px;
+                }
+            }
+            .sub_text{
+                a{
+                    @include footersubtext;
+                }
+            }
+        }
+        .second_col{
+            margin-left: 5px;
+            .main_text{
+                a{
+                    @include header;
+                    @include footertext;
+                    margin-bottom: 20px;
+                }
+            }
+            .sub_text{
+                a{
+                    @include footersubtext;
+                }
+            }
+        }
+        .third_col{
+            margin-left: 20px;
+            .main_text{
+                a{
+                    @include header;
+                    @include footertext;
+                    margin-bottom: 20px;
+                }
+            }
+            .sub_text{
+                a{
+                    @include footersubtext;
+                }
+            }
+        }
+        .hr_line{
+            margin-top: 141px;
+        }
+        .hr_text{
+            @include fontprops;
+            font-size: 12px;
+            line-height: 14.4px;
+            color: $para_color;
+            text-align: center;
+        }
+        .footer_green{
+            transform: rotate(90deg);
+            margin-left: 0px;
+            margin-top: -220px;
+        }
+    }
+    // Footer Section End 
+ }
+
+
+/*Big size ipad*/
+@media (min-width: 768px) and (max-width: 1199.98px) { 
+    // Navigation Start 
+    .navbar{
+        padding-left: 50px;
+        .navbar-nav{
+           padding-left: 0px;
+        }
+    }
+    // Navigation End 
+
+    // Home Page Start 
+    .home_page{
+        padding-top: 50px;
+        .header_1{
+            margin-left: -25px;
+        }
+        .para_1{
+            margin-left: -25px;
+        }
+        .form-control{
+            margin-left: -25px;
+        }
+       .images{
+           padding-top: 27.55px;
+          .card_holly{
+            margin-left: 400px;
+            position: absolute;
+          }
+          .card_dicks{
+            position: absolute;
+            margin-left: 100px;
+          }
+          .lawyer_img{
+            position: relative;
+            margin-top: 0px;
+            margin-left: 90px;
+            z-index: 1;
+           }
+          .ellipse_red{
+            position: absolute;
+            margin-left: 70px;
+            margin-top: 60px;
+            }
+          .ellipse_green{
+            padding-left:0px;
+            margin-left: 548px;
+            margin-top: -168px;
+            z-index: 10;
+            }
+        }
+    }
+    // Home Page End 
+
+     // Features Section Start 
+     .features{
+        padding-top: 150px;
+        padding-bottom: 50px;
+     }
+    //  Features Section End     
+
+    // Services Section Start 
+    .services{
+        .building{
+            @include size(300px , 400px);
+            margin-top: 80px;
+        }
+    }
+    // Services Section End
+
+    //  Success Section Start 
+    .success{
+        height: 570px;
+        .img_success{
+            position: relative;
+            @include size(600px , 300px);
+            margin-left: 65px;
+            z-index: 1;
+        }
+        .img_red{
+            position: absolute;
+            @include size(96px , 98px);
+            margin-left: 600px;
+            transform: rotate(90deg);
+            margin-top: 290px;
+        }
+        .img_green{
+            position: absolute;
+            @include size(96px , 98px);
+            margin-top: 470px;
+        }
+    }
+    // Success Section End 
+
+    // Review Section Start 
+    .review{
+        padding-left: 0px;
+        padding-bottom: 20px;
+        .text_review{
+            margin-bottom: 0px;
+        }
+        .quatation{
+            visibility: hidden;
+        }
+        .quatation3{
+            @include quata;
+            transform: rotate(170deg);
+            margin-top: 200px;
+            margin-left: 200px;
+            visibility: visible;
+        }
+        .review_red{
+            visibility: hidden;
+        }
+        .review_info{
+            padding-left: 0px;
+            margin-top: -300px;
+        }
+        .review2_info{
+            padding-left: 0px;
+            padding-top: 0px;
+        }
+        .quatation2{
+            @include quata;
+            transform: rotate(170deg);
+            margin-top: -250px;
+            margin-left: 100px;
+        }
+        .review_green{
+            visibility: hidden;
+        }
+    }
+    // Review Section End 
+
+    // Subscribe Section Start 
+    .icon_v{
+        position: absolute;
+        margin-left: 50px;
+        margin-top: -60px;
+    }
+    .icon_leaf{
+        margin-left: 620px;
+        margin-top: -60px;
+        position: absolute;
+    }
+    .icon_m{
+        margin-top: -90px;
+        position: absolute;
+    }
+    .icon_slack{
+        margin-top: -90px;
+        margin-left: 550px;
+        position: absolute;
+    }
+    .subscribe{
+        position: relative;
+        .input-group{
+            margin-left: 0px;
+        }
+    }
+    // Subscribe Section End 
+
+    // Footer Section Start 
+    .footer{
+        padding-top: 60px;
+        .logo_text{
+            .ofspace_logo{
+                margin-bottom: 5px;
+            }
+        }    
+        .footer_red{
+            @include size(100px , 100px);
+            margin-top: -468px;
+            margin-left: 115px;
+        }
+        .first_col{
+            margin-left: 0px;
+        }
+        .second_col{
+            margin-left: 0px;
+        }
+        .third_col{
+            margin-left: -20px;
+        }
+        .hr_line{
+            margin-top: 70px;
+        }
+        .footer_green{
+            transform: rotate(90deg);
+            @include size(100px , 100px);
+            margin-left: 0px;
+            margin-top: -150px;
+        }
+    }
+    // Footer Section End 
+}
+
+
+/*mobile view*/
+@media (max-width: 767px) {
+    // Navigation Start 
+    .navbar{
+        padding-left: 16px;
+        .navbar-nav{
+           padding-left: 0px;
+        }
+    }
+    // Navigation End 
+
+    // Home Page Start 
+    .home_page{
+        padding-top: 52.84px;
+        padding-left: 0px;
+        .header_1{
+            font-size: 34px;
+            line-height: 40.8px;
+            margin-bottom: 10.67px;
+            text-align: center;
+        }
+        .para_1{
+            margin-bottom: 20.53px;
+            text-align: center;
+        }
+        .images{
+            padding-top: 27.55px;
+            .card_holly{
+                @include mobilecards;
+                @include size(115px,130px);
+                margin-left: 215px;
+                margin-top: 70px;
+                z-index: 2;
+                position: absolute;
+                .card_holly_main{
+                    @include fontprops;
+                    @include mobilecardmain;
+                }
+                .holly_stars{
+                    @include size(52.86px,8.53px);
+                    margin-bottom: -20px;
+                    margin-top: 0px;
+                    margin-top: -40px;
+                }
+                .holly_img{
+                    @include size(19.26px,19.19px);
+                    margin-top: 10px;
+                }
+                .card_holly_bold{
+                    @include mobilecardbold;
+                }
+                .card_holly_text{
+                    @include fontprops;
+                    @include mobilecardtext;
+                    margin-left: 22px;
+                    margin-top: -5px;
+                }
+            }
+            .card_dicks{
+                @include mobilecards;
+                @include size(115px,130px);
+                position: absolute;
+                margin-top: -70px;
+                margin-left: 70px;
+                z-index: 2;
+                .card_dicks_main{
+                    @include fontprops;
+                    @include mobilecardmain;
+                }
+                .dicks_stars{
+                    @include size(52.86px,8.53px);
+                    margin-bottom: -20px;
+                    margin-top: -40px;
+                }
+                .dicks_img{
+                    @include size(19.26px,19.19px);
+                    margin-top: 10px;
+                }
+                .card_dicks_bold{
+                    @include mobilecardbold;
+                }
+                .card_dicks_text{
+                    @include fontprops;
+                    @include mobilecardtext;
+                    margin-left: 24px;
+                    margin-top: -5px;
+                }
+            }
+           .lawyer_img{
+               position: relative;
+               @include size(294.4px , 353.07px);
+               margin-top: 0px;
+               margin-left: 40px;
+               z-index: 1;
+            }
+            .ellipse_red{
+               position: absolute;
+               @include size(99.08px , 98.67px);
+               margin-left: 40px;
+               margin-top: 60px;
+            }
+            .ellipse_green{
+               @include size(99.2px , 98.67px);
+               padding-left:0px;
+               margin-left: 278px;
+               margin-top: -85px;
+               z-index: 10;
+            }
+        }
+    }
+    // Home Page End 
+
+     // Features Section Start 
+     .features{
+        padding-top: 40.6px;
+        padding-bottom: 50.32px;
+        padding-left: 0px;
+        text-align: center;
+        .text_span{
+            position: relative;
+        }
+        .text_bold1{
+            position: absolute;
+            margin-left: 170px;
+        }
+        .text_bold2{
+            position: absolute;
+            margin-left: 170px;
+        }
+        .text_bold3{
+            position: absolute;
+            margin-left: 160px;
+        }
+    }
+    // Features Section End 
+
+    // Services Section Start 
+    .services{
+        text-align: center;
+        padding-left: 0px;
+        .building{
+            @include size(200px , 300px);
+        }
+        .text_services{
+            @include header;
+            font-size: 34px;
+            line-height: 40.8px;
+            margin-top: 50.66px;
+            margin-bottom: 40px;
+        }
+        .para_services{
+            @include paraprops;
+            font-weight: 400;
+            color: $para_color;
+        }
+    }
+    // Services Section End
+
+
+    // Success Section Start 
+    .success{
+        visibility: hidden;
+        .img_success{  
+            margin-left: 0px;
+        }
+        .img_red{
+            margin-left: 0px;
+        }
+        .img_green{
+            margin-top: 0px;
+        }
+    }
+    // Success Section End 
+
+     // Review Section Start 
+     .review{
+        padding-left: 0px;
+        padding-bottom: 0px;
+        margin-bottom: -150px;
+        margin-top: -1050px;
+        .text_review{
+            margin-bottom: 0px;
+        }
+        .quatation{
+            visibility: hidden;
+            margin-left: 0px;
+        }
+        .quatation3{
+            @include quata;
+            padding: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            transform: rotate(170deg);
+            margin-top: 200px;
+            margin-left: 280px;
+            margin-bottom: 50px;
+            visibility: visible;
+        }
+        .review_red{
+            visibility: hidden;
+        }
+        .review_info{
+            padding-left: 0px;
+            margin-top: -500px;
+            padding-left: 16px;
+        }
+        .review2_info{
+            padding-left: 0px;
+            padding-top: 0px;
+            padding-left: 16px;
+        }
+        .quatation2{
+            @include quata;
+            transform: rotate(170deg);
+            padding: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-top: -508px;
+            margin-left: 290px;
+        }
+        .review_green{
+            visibility: hidden;
+            padding-left: 0px;
+        }
+    }
+    // Review Section End 
+
+    // Subscribe Section Start 
+    .icon_v{
+        @include size(38.59px,43.32px);
+        position: absolute;
+        margin-left: 50px;
+        margin-top: -20px;
+    }
+    .icon_leaf{
+        @include size(38.59px,43.32px);
+        margin-left: 349px;
+        margin-top: -20px;
+        position: absolute;
+    }
+    .icon_m{
+        @include size(38.59px,43.32px);
+        margin-top: -20px;
+        position: absolute;
+    }
+    .icon_slack{
+        @include size(38.59px,43.32px);
+        margin-top: -20px;
+        margin-left: 290px;
+        position: absolute;
+        z-index: 5;
+    }
+    .subscribe{
+        padding-bottom: 57.55px;
+        position: relative;
+        .subscribe_text{
+            @include header;
+            font-size: 30px;
+            line-height: 36px;
+            padding-top: 33px;
+            margin-bottom: 10px;
+        }
+        .subscribe_para{
+            margin-bottom: 20px;
+        }
+        .input-group{
+            margin-left: 0px;
+        }
+    }
+    // Subscribe Section End 
+
+    // Footer Section Start 
+    .footer{
+        padding-top: 60px;
+        .logo_text{
+            text-align: center;
+            margin-bottom: 23.03px;
+           .social_icons{
+               margin-left: 0px;
+               a{
+                 .instagram{
+                    padding-left: 2px;
+                  }
+                 .facebook{
+                    padding-left: 2px;
+                  }
+                 .twitter{
+                    padding-left: 2px;
+                  }
+                }
+            }
+        }
+        .footer_red{
+            @include size(100px , 100px);
+            margin-top: -780px;
+            margin-left: 18px;
+        }
+        .first_col{
+            margin-left: 0px;
+            .main_text{
+                a{
+                   @include header;
+                   @include mobiletext;
+                }
+            }
+            .sub_text{
+                a{
+                   @include mobilesubtext;
+                   @include fontprops;
+                }   
+            }
+        }
+        .second_col{
+            margin-left: 0px;
+            .main_text{
+                a{
+                   @include header;
+                   @include mobiletext;
+                }   
+            }
+            .sub_text{
+                a{
+                   @include mobilesubtext;
+                   @include fontprops;
+                }
+            }
+        }
+        .third_col{
+            margin-left: 0px;
+            .main_text{
+                a{
+                   @include header;
+                   @include mobiletext;
+                }
+            }
+            .sub_text{
+                a{
+                   @include mobilesubtext;
+                   @include fontprops;
+                }
+            }
+        }
+        .hr_line{
+            margin-top: 50px;
+        }
+        .footer_green{
+            @include size(100px , 100px);
+            transform: rotate(90deg);
+            margin-left: -10px;
+            margin-top: -150px;
+            margin-bottom: -70px;
+        }
+    }
+    // Footer Section End 
+ }

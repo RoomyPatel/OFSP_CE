@@ -1,0 +1,182 @@
+@mixin fontprops{
+    font-family: $font-type;
+    font-weight: 400;
+}
+
+@mixin header{
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+@mixin fontitalic{
+    font-style: italic;
+    font-size: 22.48px;
+    line-height: 32.59px;
+    color: $para_color;
+}
+
+@mixin paraprops{
+    font-family: $font-type;
+    font-size: 16px;
+    line-height: 23.2px;
+}
+
+@mixin textbold{
+    color: $secondary_color;
+    font-size: 24px;
+    line-height: 34.8px;
+    margin-top: -20px;
+}
+
+@mixin header_font{
+    font-size: 48px;
+    line-height: 57.6px;
+    color: $primary-color;
+}
+
+@mixin reviewpara{
+    font-family: $font-type;
+    color: $primary_color;
+    font-size: 24px;
+    line-height: 34.8px;
+    font-weight: 700;
+}
+
+@mixin quata{
+    border-radius: 50%;
+    padding: 20px;
+    background: $bg_color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@mixin search{
+    color: $primary-color;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    background: transparent;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.27);
+}
+
+@mixin button{
+    font-style: $font-type;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color:$white_color;
+    background-color: $primary-color;
+}
+
+@mixin footertext{
+    font-size: 20px;
+    line-height: 30px;
+    color: $primary-color;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+        color: $para_color;
+    }
+}
+
+@mixin footersubtext{
+    font-size: 16px;
+    line-height: 35.2px;
+    color: $para_color;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+        color: $para_color;
+    }
+}
+
+@mixin size($width , $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin mobiletext{
+    font-size: 14px;
+    line-height: 21px;
+    color: $primary-color;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+        color: $para_color;
+    }
+}
+
+@mixin mobilesubtext{
+    font-size: 12px;
+    line-height: 25.2px;
+    color: $para_color;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+        color: $para_color;
+    }
+}
+
+@mixin cards{
+    width: 215px;
+    height: 212px;
+    background: $white_color;
+    box-shadow: 0px 30px 70px rgba(0, 0, 0, 0.05);
+}
+
+@mixin mobilecards{
+    width: 115px;
+    height: 113.4px;
+    background: $white_color;
+    box-shadow: 0px 30px 70px rgba(0, 0, 0, 0.05);
+}
+@mixin cardmain{
+    font-size: 12px;
+    line-height: 17.4px;
+    color: $para_color;
+}
+
+@mixin mobilecardmain{
+    font-size: 6.38333px;
+    line-height: 9.26px;
+    color: $para_color;
+}
+@mixin cardboldtext{
+    color: $primary-color;
+    font-family: $font-type;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20.3px;
+}
+
+@mixin mobilecardbold{
+    color: $primary-color;
+    font-family: $font-type;
+    font-weight: 500;
+    font-size: 7.44722px;
+    line-height: 10.8px;
+}
+
+@mixin cardtext{
+    font-size: 12px;
+    line-height: 17.4px;
+    color: $para_color;
+}
+
+@mixin mobilecardtext{
+    font-size: 6.38333px;
+    line-height: 9.26px;
+    color: $para_color;
+}
+
+@mixin socialicons{
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.08);
+    color: $primary-color;
+    background: $bg_white;
+    border-radius: 50%;
+    &:hover{
+        color: $bg_white;
+        background: $primary-color;
+    }
+}
