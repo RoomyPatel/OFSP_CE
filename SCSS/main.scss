@@ -178,16 +178,26 @@
     .services{
         padding-bottom: 150px;
         padding-left: 45px;
-        .text_services{
-            @include header;
-            @include header_font;
-            margin-top: 100px;
-            margin-bottom: 40px;
-        }
-        .para_services{
-            @include paraprops;
-            font-weight: 400;
-            color: $para_color;
+        .flex_services{
+            flex-direction: row;
+            .building{
+               margin-left: 95px;
+            }
+           .details_services{
+               margin-left: 150px;
+               margin-right: 150px;
+               .text_services{
+                   @include header;
+                   @include header_font;
+                   margin-top: 110px;
+                   margin-bottom: 40px;
+                }
+                .para_services{
+                   @include paraprops;
+                   font-weight: 400;
+                   color: $para_color;
+                }
+            }
         }
     }
     // Services Section End 
@@ -378,37 +388,37 @@
         }
         .logo_text{
             .ofspace_logo{
-              margin-bottom: 34px;
+               margin-bottom: 34px;
             }
             .footer_text{
-              @include fontprops;
-              font-size: 16px;
-              line-height: 24px;
-              margin-bottom: 23px;
-              color: $para_color;
+               @include fontprops;
+               font-size: 16px;
+               line-height: 24px;
+               margin-bottom: 23px;
+               color: $para_color;
             }
             .social_icons{
-              margin-left: -5px;
-              a{
-                text-decoration: none;
-                .instagram{
-                  @include size(30px , 30px);
-                  @include socialicons;
-                  padding-left: 8px;
-                  padding-top: 7px;
-                }
-                .facebook{
-                  @include size(30px , 30px);
-                  @include socialicons;
-                  padding-left: 10px;
-                  padding-top: 7px;
-                }
-                .twitter{
-                  @include size(30px , 30px);
-                  @include socialicons;
-                  padding-left: 7px;
-                  padding-top: 7px;
-                }
+               margin-left: -5px;
+               a{
+                  text-decoration: none;
+                  .instagram{
+                    @include size(30px , 30px);
+                    @include socialicons;
+                    padding-left: 8px;
+                    padding-top: 7px;
+                  }
+                  .facebook{
+                    @include size(30px , 30px);
+                    @include socialicons;
+                    padding-left: 10px;
+                    padding-top: 7px;
+                  }
+                  .twitter{
+                    @include size(30px , 30px);
+                    @include socialicons;
+                    padding-left: 7px;
+                    padding-top: 7px;
+                  }
                 }
             }
         }
@@ -540,10 +550,28 @@
 
     // Services Section Start 
     .services{
-        .building{
-            @include size(300px , 400px);
-            margin-top: 80px;
-        }
+        .flex_services{
+            .building{
+               @include size(300px , 400px);
+               margin-top: 80px;
+               margin-left: 40px;
+            }
+            .details_services{
+                margin-left: 60px;
+                margin-right: 80px;
+                .text_services{
+                    @include header;
+                    @include header_font;
+                    margin-top: 110px;
+                    margin-bottom: 40px;
+                }
+                .para_services{
+                    @include paraprops;
+                    font-weight: 400;
+                    color: $para_color;
+                }
+            }
+        }    
     }
     // Services Section End
 
@@ -815,24 +843,33 @@
     .services{
         text-align: center;
         padding-left: 0px;
-        .building{
-            @include size(200px , 300px);
-        }
-        .text_services{
-            @include header;
-            font-size: 34px;
-            line-height: 40.8px;
-            margin-top: 50.66px;
-            margin-bottom: 40px;
-        }
-        .para_services{
-            @include paraprops;
-            font-weight: 400;
-            color: $para_color;
+        .flex_services{
+            flex-direction: column;
+            .building{
+               @include size(200px , 300px);
+               margin-left: 0px;
+            }
+            .details_services{
+                margin-left: 0px;
+                margin-right: 0px;
+               .text_services{
+                   @include header;
+                   font-size: 34px;
+                   line-height: 40.8px;
+                   margin-top: 20px;
+                   margin-bottom: 40px;
+                }
+                .para_services{
+                   @include paraprops;
+                   font-weight: 400;
+                   margin-left: 5px;
+                   margin-right: 5px;
+                   color: $para_color;
+                }
+            }    
         }
     }
     // Services Section End
-
 
     // Success Section Start 
     .success{
@@ -856,7 +893,7 @@
         margin-bottom: -150px;
         margin-top: -1050px;
         .text_review{
-            margin-bottom: 0px;
+            margin-bottom: -30px;
         }
         .quatation{
             visibility: hidden;
@@ -955,15 +992,15 @@
            .social_icons{
                margin-left: 0px;
                a{
-                 .instagram{
-                    padding-left: 2px;
-                  }
-                 .facebook{
-                    padding-left: 2px;
-                  }
-                 .twitter{
-                    padding-left: 2px;
-                  }
+                   .instagram{
+                      padding-left: 2px;
+                    }
+                   .facebook{
+                      padding-left: 2px;
+                    }
+                    .twitter{
+                      padding-left: 2px;
+                    }
                 }
             }
         }
@@ -976,14 +1013,14 @@
             margin-left: 0px;
             .main_text{
                 a{
-                   @include header;
-                   @include mobiletext;
+                    @include header;
+                    @include mobiletext;
                 }
             }
             .sub_text{
                 a{
-                   @include mobilesubtext;
-                   @include fontprops;
+                    @include mobilesubtext;
+                    @include fontprops;
                 }   
             }
         }
@@ -991,14 +1028,14 @@
             margin-left: 0px;
             .main_text{
                 a{
-                   @include header;
-                   @include mobiletext;
+                    @include header;
+                    @include mobiletext;
                 }   
             }
             .sub_text{
                 a{
-                   @include mobilesubtext;
-                   @include fontprops;
+                    @include mobilesubtext;
+                    @include fontprops;
                 }
             }
         }
@@ -1006,14 +1043,14 @@
             margin-left: 0px;
             .main_text{
                 a{
-                   @include header;
-                   @include mobiletext;
+                    @include header;
+                    @include mobiletext;
                 }
             }
             .sub_text{
                 a{
-                   @include mobilesubtext;
-                   @include fontprops;
+                    @include mobilesubtext;
+                    @include fontprops;
                 }
             }
         }

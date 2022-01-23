@@ -192,20 +192,27 @@
   .services {
     padding-bottom: 150px;
     padding-left: 45px; }
-    .services .text_services {
-      font-family: Poppins;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 57.6px;
-      color: #2C373E;
-      margin-top: 100px;
-      margin-bottom: 40px; }
-    .services .para_services {
-      font-family: Inter;
-      font-size: 16px;
-      line-height: 23.2px;
-      font-weight: 400;
-      color: #46535A; }
+    .services .flex_services {
+      flex-direction: row; }
+      .services .flex_services .building {
+        margin-left: 95px; }
+      .services .flex_services .details_services {
+        margin-left: 150px;
+        margin-right: 150px; }
+        .services .flex_services .details_services .text_services {
+          font-family: Poppins;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 57.6px;
+          color: #2C373E;
+          margin-top: 110px;
+          margin-bottom: 40px; }
+        .services .flex_services .details_services .para_services {
+          font-family: Inter;
+          font-size: 16px;
+          line-height: 23.2px;
+          font-weight: 400;
+          color: #46535A; }
   .success {
     background: linear-gradient(180deg, rgba(229, 247, 234, 0.77) 0%, #E5F7EA 68.98%);
     text-align: center;
@@ -570,10 +577,28 @@
   .features {
     padding-top: 150px;
     padding-bottom: 50px; }
-  .services .building {
+  .services .flex_services .building {
     width: 300px;
     height: 400px;
-    margin-top: 80px; }
+    margin-top: 80px;
+    margin-left: 40px; }
+  .services .flex_services .details_services {
+    margin-left: 60px;
+    margin-right: 80px; }
+    .services .flex_services .details_services .text_services {
+      font-family: Poppins;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 57.6px;
+      color: #2C373E;
+      margin-top: 110px;
+      margin-bottom: 40px; }
+    .services .flex_services .details_services .para_services {
+      font-family: Inter;
+      font-size: 16px;
+      line-height: 23.2px;
+      font-weight: 400;
+      color: #46535A; }
   .success {
     height: 570px; }
     .success .img_success {
@@ -812,22 +837,30 @@
   .services {
     text-align: center;
     padding-left: 0px; }
-    .services .building {
-      width: 200px;
-      height: 300px; }
-    .services .text_services {
-      font-family: Poppins;
-      font-weight: 700;
-      font-size: 34px;
-      line-height: 40.8px;
-      margin-top: 50.66px;
-      margin-bottom: 40px; }
-    .services .para_services {
-      font-family: Inter;
-      font-size: 16px;
-      line-height: 23.2px;
-      font-weight: 400;
-      color: #46535A; }
+    .services .flex_services {
+      flex-direction: column; }
+      .services .flex_services .building {
+        width: 200px;
+        height: 300px;
+        margin-left: 0px; }
+      .services .flex_services .details_services {
+        margin-left: 0px;
+        margin-right: 0px; }
+        .services .flex_services .details_services .text_services {
+          font-family: Poppins;
+          font-weight: 700;
+          font-size: 34px;
+          line-height: 40.8px;
+          margin-top: 20px;
+          margin-bottom: 40px; }
+        .services .flex_services .details_services .para_services {
+          font-family: Inter;
+          font-size: 16px;
+          line-height: 23.2px;
+          font-weight: 400;
+          margin-left: 5px;
+          margin-right: 5px;
+          color: #46535A; }
   .success {
     visibility: hidden; }
     .success .img_success {
@@ -842,7 +875,7 @@
     margin-bottom: -150px;
     margin-top: -1050px; }
     .review .text_review {
-      margin-bottom: 0px; }
+      margin-bottom: -30px; }
     .review .quatation {
       visibility: hidden;
       margin-left: 0px; }
